@@ -15,6 +15,7 @@ body {
 .right{
     width: 75vw;
     margin: 12px 0px 8px 2px;
+    padding-right: 10px;
 }
 
 .home ul li{
@@ -65,5 +66,10 @@ body {
 
 .header > *{
     padding: 19px;
+}
+
+.playlist{
+    background-color: rgb(35, 34, 34);
+    height: 86.5vh;
 }
 
