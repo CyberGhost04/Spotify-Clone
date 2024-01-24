@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body {
@@ -25,6 +26,14 @@ body {
     width: 15px;
     padding-top: 16px;
     font-weight: bold;
+    font-size: 16px;
+    gap: 25px;
+    margin: 5px;
+}
+
+.homeimg {
+    height: 23px;
+    width: 23px;
 }
 
 .heading{
@@ -71,5 +80,9 @@ body {
 .playlist{
     background-color: rgb(35, 34, 34);
     height: 86.5vh;
+}
+
+.playlist {
+    padding: 16px;
 }
 
