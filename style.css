@@ -86,3 +86,27 @@ body {
     padding: 16px;
 }
 
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #181818;
+    border-color: #181818;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 155px; 
+    border-radius: 7px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card > *{
+    padding-top: 9px;
+}
