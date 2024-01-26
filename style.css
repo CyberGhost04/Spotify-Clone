@@ -75,15 +75,12 @@ body {
 }
 
 .header > *{
-    padding: 19px;
+    padding: 0px 19px 0px 19px;
 }
 
 .playlist{
     background-color: rgb(35, 34, 34);
-    height: 87vh;
-}
-
-.playlist {
+    height: 89.7vh;
     padding: 16px;
 }
 
@@ -92,7 +89,7 @@ body {
     gap: 15px;
     margin: 15px;
     flex-wrap: wrap;
-    max-height: 90%;
+    max-height: 76vh;
     overflow-y: scroll;
 }
 
@@ -131,3 +128,42 @@ body {
     opacity: 0;
     transition: all 1s ease-out;
 }
+
+.loginbtn {
+    font-size: 15px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    padding: 12px 25px 12px 25px;
+}
+
+.signbtn {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #101010;
+    color: rgb(169, 161, 161);
+    border-style: solid;
+    border-color: #101010;
+    border-radius: 30px;
+    padding: 12px 25px 12px 25px;
+}
+.signbtn:hover {
+    font-size: 1.0rem;
+    color: white;
+}
+
+.loginbtn:hover {
+    font-size: 1.0rem;
+}
+
+.nav {
+    display: flex;
+    margin: 10px 0px 0px 5px;
+    gap: 10px;
+}
+
+.nav img{
+    height: 30px;
+}
+
