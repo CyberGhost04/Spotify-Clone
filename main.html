@@ -1,283 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
 </head>
+
 <body>
-    <div class="container flex bg-black">
-        <div class="left">
-            <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img src="spotifylogo.svg" class="invert" style="margin: 10px 0px 0px 6px;"></div>
-                <ul>
-                    <li><img src="home.svg" class="invert homeimg">Home</li>
-                    <li><img src="search.svg" class="invert homeimg">Search</li>
-                </ul>
-            </div>
-            <div class="library bg-grey rounded m-1 p-1">
-                <div class="heading">
-                    <img src="library.svg" class="invert">
-                    <h2>
-                        Your Library
-                    </h2>
-                </div>
-                <div class="footer">
-                  <div>
-                    <a href="https://www.spotify.com/in-en/legal/">
-                      <span>Legal</span>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://www.spotify.com/in-en/privacy/" >
-                      <span>Privacy Center</span>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/" >
-                      <span>Privacy Policy</span>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/" >
-                      <span>Cookies</span>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" >
-                      <span>About Ads</span>
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://www.spotify.com/in-en/accessibility/" >
-                      <span>Accessibility</span>
-                    </a>
-                  </div>
-                </div>
-            </div>
-          </div>
-        <div class="right">
-            <div class="header rounded p-1">
-              <div class="nav">
-                <img src="circle-arrow-left-double.svg" class="invert">
-                <img src="circle-arrow-right-double.svg" class="invert">
-              </div>
-              <div class="buttons">
-                <button class="signbtn">Sign Up</button>
-                <button class="loginbtn">Log in</button>
-              </div>
-            </div>
-            <div class="playlist rounded">
-              <h1>Spotify Playlist</h1>
-              <div class="cards">
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-                <div class="card">
-                  <div class="play">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
-                          <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="#000000" stroke-width="3" stroke-linejoin="round"/>
-                      </svg>                 
-                  </div>
-                  <img src="moonlight.jpeg">
-                  <h3>Paradise-EP</h3>
-                  <p>2019 <br> Chase Atlantic</p>
-                </div>
-
-
-
-
-
-
-
-
-
-
-              </div>
-            </div>
+  <div class="container flex bg-black">
+    <div class="left">
+      <div class="home bg-grey rounded m-1 p-1">
+        <div class="logo"><img src="spotifylogo.svg" class="invert" style="margin: 10px 0px 0px 6px;"></div>
+        <ul>
+          <li><img src="home.svg" class="invert homeimg">Home</li>
+          <li><img src="search.svg" class="invert homeimg">Search</li>
+        </ul>
+      </div>
+      <div class="library bg-grey rounded m-1 p-1">
+        <div class="heading">
+          <img src="library.svg" class="invert">
+          <h2>
+            Your Library
+          </h2>
         </div>
+        <div class="footer">
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/">
+              <span>Legal</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/privacy/">
+              <span>Privacy Center</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+              <span>Cookies</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+              <span>About Ads</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/accessibility/">
+              <span>Accessibility</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <div class="right">
+      <div class="header rounded p-1">
+        <div class="nav">
+          <img src="circle-arrow-left-double.svg" class="invert">
+          <img src="circle-arrow-right-double.svg" class="invert">
+        </div>
+        <div class="buttons">
+          <button class="signbtn">Sign Up</button>
+          <button class="loginbtn">Log In</button>
+        </div>
+      </div>
+      <div class="playlist rounded">
+        <h1>Spotify Playlist</h1>
+        <div class="cards">
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+          <div class="card">
+            <div class="play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="fill">
+                <path
+                  d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                  stroke="#000000" stroke-width="3" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <img src="moonlight.jpeg">
+            <h3>Paradise-EP</h3>
+            <p>2019 <br> Chase Atlantic</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="playbar">
+          <div class="songinfo">
+
+          </div>
+          <div class="playbuttons">
+            <img src="shuffle.svg" alt="" class="invert">
+            <img src="previous.svg" alt="" class="invert">
+            <img src="play-circle.svg" alt="" class="invert">
+            <img src="next.svg" alt="" class="invert">
+            <img src="repeat.svg" alt="" class="invert">
+          </div>
+          <div class="songtime">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
