@@ -89,7 +89,8 @@ body {
 .cards {
     display: flex;
     gap: 15px;
-    margin-top: 15px;
+    margin: 15px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -100,6 +101,7 @@ body {
     padding: 10px;
     width: 155px; 
     border-radius: 7px;
+    position: relative;
 }
 
 .card img {
@@ -109,4 +111,18 @@ body {
 
 .card > *{
     padding-top: 9px;
+}
+
+.play{
+    background-color: green;
+    border-radius: 50%;
+    width: 20px; 
+    height: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 12px;
+    position: absolute;
+    top: 123px;
+    right: 15px;
 }
