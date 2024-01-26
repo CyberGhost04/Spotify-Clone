@@ -56,10 +56,11 @@ body {
     gap: 10px;
     position:absolute;
     bottom: 0;
+    padding: 7px;
 }
 
 .footer a{
-    color: gray;;
+    color: gray;    
 }
 
 .library {
@@ -79,7 +80,7 @@ body {
 
 .playlist{
     background-color: rgb(35, 34, 34);
-    height: 86.5vh;
+    height: 87vh;
 }
 
 .playlist {
@@ -91,6 +92,8 @@ body {
     gap: 15px;
     margin: 15px;
     flex-wrap: wrap;
+    max-height: 90%;
+    overflow-y: scroll;
 }
 
 .card {
@@ -114,7 +117,7 @@ body {
 }
 
 .play{
-    background-color: green;
+    background-color: #1fdf64;
     border-radius: 50%;
     width: 20px; 
     height: 20px; 
@@ -125,4 +128,6 @@ body {
     position: absolute;
     top: 123px;
     right: 15px;
+    opacity: 0;
+    transition: all 1s ease-out;
 }
