@@ -40,10 +40,10 @@ body {
     display: flex;
     gap: 10px; 
     width: 100%;
-    padding-top: 12px;
+    padding: 12px 12px 12px 6px;
+    margin: 8px;
     font-weight: bold;
     font-size: 15px;
-    margin-left: 8px;
 }
 
 .heading img{
@@ -171,16 +171,26 @@ body {
 
 .playbar {
     position: absolute;
-    bottom: 0;
-    background-color: #1fdf64;
-    width: 100%;
+    bottom: 5px;
+    background-color: black;
+    width: 94%;
     padding: 10px;
+    border-radius: 5px;
+    border-color: black;
 }
 
 .playbuttons {
     display: flex;
     gap: 16px;
     justify-content: center;
+}
+
+.songList ul{
+    padding: 0px 42px 0px 42px;
+}
+
+.songList li{
+    list-style-type: decimal;
 }
 
 
