@@ -42,7 +42,7 @@
 
 /* This will apply to all scrollbars on the page*/
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 
 /* Track */

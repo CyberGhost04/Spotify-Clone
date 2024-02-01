@@ -16,9 +16,9 @@ async function getSongs(){
 }
 
 async function main(){
-    let songs = await getSongs();
-    console.log(songs);
+    let currentSong;
 
+    let songs = await getSongs();
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
     for (const song of songs) {
         songUL.innerHTML = songUL.innerHTML + `<li> 
@@ -33,13 +33,11 @@ async function main(){
          </li>`;
     }
 
-    var audio = new Audio(songs[1]);
-    //audio.play();
+    Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e=>{
+        console.log(e.querySelector(".info").firstElementChild.innerHTML);
+    })
 
-    audio.addEventListener("loadeddata", () => {
-        let duration = audio.duration;
-        console.log(duration);
-      });
+    
 }
 
 main();
