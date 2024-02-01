@@ -82,7 +82,7 @@ body {
 .playlist{
     background-color: rgb(35, 34, 34);
     height: 89.7vh;
-    padding: 16px;
+    padding: 16px 5px 16px 16px;
     position:relative;
 }
 
@@ -186,6 +186,10 @@ body {
     justify-content: center;
 }
 
+.playbuttons img{
+    cursor: pointer;
+}
+
 .songList {
     height: 550px;
     overflow: auto;
@@ -213,8 +217,7 @@ body {
     border-color: white;
     border-top-left-radius: 45px;
     border-bottom-left-radius: 45px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-right: hidden;
     justify-content: space-between;
 }
 
@@ -231,6 +234,7 @@ body {
     border-radius: 10px;
     margin-left: 4px;
     background-color: white;
+    cursor: pointer;
 }
 
 .circle {
@@ -242,5 +246,17 @@ body {
     bottom: 6px;
     left: 0%;
     transition: left 0.5s;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    max-height: 30px;
+    position: relative;
+}
+
+.abovebar .playbuttons {
+    position: absolute;
+    left: 41.5%;
 }
 

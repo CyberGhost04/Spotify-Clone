@@ -1,6 +1,12 @@
 
 let currentSong = new Audio();
 
+function convertSecondsToMinutesSeconds(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    let remainingSeconds = Math.round(seconds % 60);
+    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+}
+
 async function getSongs(){
     let a = await fetch("http://127.0.0.1:5500/songs/"); 
     let response = await a.text();
@@ -21,6 +27,8 @@ const playMusic = (track)=> {
     //let audio = new Audio("/songs/" + track);
     currentSong.src = "/songs/" + track;
     currentSong.play();
+    document.querySelector(".songinfo").innerHTML = track;
+    document.querySelector(".songtime").innerHTML = "";
 
 }
 
@@ -43,10 +51,36 @@ async function main(){
 
     Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e=>{
         e.addEventListener("click", element=>{
-            console.log(e.querySelector(".info").firstElementChild.innerHTML);
-            playMusic(e.querySelector(".info").firstElementChild.innerHTML);
+            //console.log(e.querySelector(".info").firstElementChild.innerHTML);
+            playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim());
+            play.src = "pause.svg";
         })
     })
+
+    play.addEventListener("click", ()=>{
+        if(currentSong.paused){
+            currentSong.play();
+            play.src = "pause.svg";
+        }
+        else{
+            currentSong.pause();
+            play.src = "play-circle.svg";
+        }
+    })
+
+    currentSong.addEventListener("timeupdate", ()=>{
+        //console.log(currentSong.currentTime, currentSong.duration);
+        document.querySelector(".songtime").innerHTML = `${convertSecondsToMinutesSeconds(currentSong.currentTime)}/${convertSecondsToMinutesSeconds(currentSong.duration)}`
+        document.querySelector(".circle").style.left = (currentSong.currentTime/currentSong.duration)*100 + "%";
+    })
+
+    document.querySelector(".seekBar").addEventListener("click", e=>{
+        //console.log(e.offsetX/e.target.getBoundingClientRect().width)*100; 
+        let percent =  (e.offsetX/e.target.getBoundingClientRect().width)*100;
+        document.querySelector(".circle").style.left = (e.offsetX/e.target.getBoundingClientRect().width)*100 + "%";
+        currentSong.currentTime = (currentSong.duration * percent) / 100;
+    })
+
 
     
 }
