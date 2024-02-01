@@ -81,7 +81,6 @@ async function main(){
         currentSong.currentTime = (currentSong.duration * percent) / 100;
     })
 
-
     
 }
 
