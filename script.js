@@ -15,6 +15,12 @@ async function getSongs(){
     return songs;
 }
 
+const playMusic = (track)=> {
+    let audio = new Audio("/songs/" + track);
+    audio.play();
+
+}
+
 async function main(){
     let currentSong;
 
@@ -34,7 +40,10 @@ async function main(){
     }
 
     Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e=>{
-        console.log(e.querySelector(".info").firstElementChild.innerHTML);
+        e.addEventListener("click", element=>{
+            console.log(e.querySelector(".info").firstElementChild.innerHTML);
+            playMusic(e.querySelector(".info").firstElementChild.innerHTML);
+        })
     })
 
     
