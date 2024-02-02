@@ -92,7 +92,7 @@ body {
     margin: 15px;
     flex-wrap: wrap;
     max-height: 76vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .card {
@@ -213,7 +213,7 @@ body {
     gap: 10px;
     cursor: pointer;
     padding: 10px 0px 10px 10px;
-    border-style:solid;
+    border-style:hidden;
     border-color: white;
     border-top-left-radius: 45px;
     border-bottom-left-radius: 45px;
@@ -258,5 +258,50 @@ body {
 .abovebar .playbuttons {
     position: absolute;
     left: 41.5%;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo {
+    display: flex;
+     justify-content: space-between;
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .left{
+        position: absolute;
+        left: -100%;
+        width: 34vw;
+        transition: all .3s;
+        z-index: 1;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .playbar {
+        width: 91vw;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 5px;
+    }
+
+    .header > *{
+        padding: 0px 19px 0px 0px;
+    }
+
+    .close {
+        display: block;
+    }
+    
 }
 
