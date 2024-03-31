@@ -170,8 +170,8 @@ body {
 }
 
 .playbar {
-    position: fixed;
-    bottom: 10px;
+    position: absolute;
+    bottom: 35px;
     background-color: darkslateblue;
     width: 70.7vw;
     padding: 10px;
@@ -184,10 +184,12 @@ body {
     display: flex;
     gap: 16px;
     justify-content: center;
+    align-items: center;
 }
 
 .playbuttons img{
     cursor: pointer;
+    height: 60px;
 }
 
 .songList {
@@ -203,8 +205,8 @@ body {
 }
 
 .songList .info{
-    font-size: 15px;
-    width: 240px;
+    font-size: 17px;
+    width: 340px;
 }
 
 .songList li{
@@ -272,6 +274,11 @@ body {
 .close {
     display: none;
 }
+
+.midtoppic li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 @media (max-width: 1400px) {
     .left{

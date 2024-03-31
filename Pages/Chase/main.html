@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/utility.css">
+  <link rel="icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+</head>
+
+<body style="overflow-x: hidden;">
+  <div class="container flex bg-black">
+    <div class="left">
+      <div class="home bg-grey rounded m-1 p-1">
+        <div class="logo">
+          <img src="/svgs/spotifylogo.svg" class="invert" style="margin: 10px 0px 0px 6px;">
+          <div class="close"><img class="invert" src="/svgs/cancel-01.svg" alt=""></div>
+        </div>
+        <ul>
+          <li><img src="/svgs/home.svg" class="invert homeimg">Home</li>
+          <li><img src="/svgs/search.svg" class="invert homeimg">Search</li>
+        </ul>
+      </div>
+      <div class="library bg-grey rounded m-1 p-1">
+        <div class="heading">
+          <img src="/svgs/library.svg" class="invert">
+          <h2>
+            Your Library
+          </h2>
+        </div>
+        <div class="notsnglist"
+          style="display: flex; flex-direction: column; gap: 20px; max-height: 83%; overflow-y: auto;">
+          <a href="/Pages/Chase/main.html" style="text-decoration: none;">
+            <div class="newcards" style="display: flex; gap: 10px; padding-left: 5px;">
+              <img src="/svgs/moonlight.jpeg" style="height: 70px; width: 70px;border-radius: 50%;" alt="">
+              <div class="txt" style="display: flex; flex-direction: column; align-items: end; justify-content: center;">
+                <ul style="list-style-type: none; color: green;">
+                  <li style="font-size: 22px;">Chase Atlantic</li>
+                  <li>2019</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="newcards" style="display: flex; gap: 10px; padding-left: 5px;">
+              <img src="/svgs/moonlight.jpeg" style="height: 70px; width: 70px;border-radius: 50%;" alt="">
+              <div class="txt" style="display: flex; flex-direction: column; align-items: end; justify-content: center;">
+                <ul style="list-style-type: none;color: white;">
+                  <li style="font-size: 22px;">Chase Atlantic</li>
+                  <li>2019</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="newcards" style="display: flex; gap: 10px; padding-left: 5px;">
+              <img src="/svgs/moonlight.jpeg" style="height: 70px; width: 70px;border-radius: 50%;" alt="">
+              <div class="txt" style="display: flex; flex-direction: column; align-items: end; justify-content: center;">
+                <ul style="list-style-type: none;color: white;">
+                  <li style="font-size: 22px;">Chase Atlantic</li>
+                  <li>2019</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="newcards" style="display: flex; gap: 10px; padding-left: 5px;">
+              <img src="/svgs/moonlight.jpeg" style="height: 70px; width: 70px;border-radius: 50%;" alt="">
+              <div class="txt" style="display: flex; flex-direction: column; align-items: end; justify-content: center;">
+                <ul style="list-style-type: none;color: white;">
+                  <li style="font-size: 22px;">Chase Atlantic</li>
+                  <li>2019</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          <a href="" style="text-decoration: none;">
+            <div class="newcards" style="display: flex; gap: 10px; padding-left: 5px;">
+              <img src="/svgs/moonlight.jpeg" style="height: 70px; width: 70px;border-radius: 50%;" alt="">
+              <div class="txt" style="display: flex; flex-direction: column; align-items: end; justify-content: center;">
+                <ul style="list-style-type: none; color: white;">
+                  <li style="font-size: 22px;">Chase Atlantic</li>
+                  <li>2019</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="footer">
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/">
+              <span>Legal</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/privacy/">
+              <span>Privacy Center</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+              <span>Privacy Policy</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+              <span>Cookies</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+              <span>About Ads</span>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/accessibility/">
+              <span>Accessibility</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="header rounded p-1">
+        <div class="nav">
+          <img class="invert hamburger" src="/svgs/menu-01.svg" alt="">
+          <img src="/svgs/circle-arrow-left-double.svg" class="invert" id="arrprev" style="cursor: pointer;">
+          <img src="/svgs/circle-arrow-right-double.svg" class="invert" id="arrnext" style="cursor: pointer;">
+        </div>
+        <div class="buttons">
+          <button class="signbtn">Sign Up</button>
+          <button class="loginbtn">Log In</button>
+        </div>
+      </div>
+      <div class="playlist rounded" style="display: flex;">
+        <div class="plyleft" style="display: flex; min-height: fit-content; min-width: 65%; flex-direction: column;">
+          <div class="pltop" style=" min-height: 45%; display: flex; gap: 5px;">
+            <div class="imgcnt" style="display: flex; align-items: center;"><img src="/svgs/moonlight.jpeg" id="mnlight"
+                alt="" style="height: 257px; width: 270px;"></div>
+            <div class="txtcnt"
+              style="min-height: 45%; min-width: 65%; display: flex; align-items:center; margin-bottom: 10px; margin-left: 10px;">
+              <ul class="midtoppic" style="list-style: none;">
+                <li>Public playlist</li>
+                <li style="font-size:75px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Chase Atlantic
+                </li>
+                <li>The best</li>
+              </ul>
+            </div>
+          </div>
+          <div class="songList">
+            <ul>
+
+            </ul>
+          </div>
+        </div>
+        <div class="plyright" style="display: flex; min-width: 34%; display: flex; flex-direction: column; background-color: #101010; border-radius:10px ;">
+          <div class="plyingpic"
+            style="min-height: 60%; min-width: 34%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+            <center>Now Playing From <br />"Chase Atlantic"</center>
+            <img src="/svgs/moonlight.jpeg" id="mnlight" alt="" style="height: 290px; width: 290px;">
+          </div>
+          <div class="songinfo"
+            style=" min-height: 15%; font-size: 20px; top: 60px; font-weight: bold; display: flex; justify-content: center; align-items: center;">
+
+          </div>
+          <div class="sngbr" style="min-height: 10%; display: flex; justify-content: center; align-items: center; gap: 5px;">
+              <div><img id="previous" src="/svgs/previous.svg" alt="" class="invert" style="cursor: pointer;" height="50rem"></div>
+              <div><img id="play" src="/svgs/play-circle.svg" alt="" class="invert" style="cursor: pointer;" height="70rem"></div>
+              <div><img id="next" src="/svgs/next.svg" alt="" class="invert" style="cursor: pointer; " height="50rem"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
