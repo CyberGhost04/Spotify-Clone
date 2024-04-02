@@ -20,7 +20,7 @@ async function getSongs() {
 
 const playMusic = (track) => {
     //let audio = new Audio("/songs/" + track);
-    currentSong.src = "/songs/" + track;
+    currentSong.src = "/songs/Chase/" + track;
     currentSong.play();
     document.querySelector(".songinfo").innerHTML = `<div>${track.replaceAll("%20", " ")}</div>`;
     document.querySelector(".songtime").innerHTML = "";
@@ -33,10 +33,9 @@ async function main() {
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
     for (const song of songs) {
         songUL.innerHTML = songUL.innerHTML + `<li>
-        <img src="/svgs/vynil-02.svg" class="invert" alt="">
-        <div class="info">
+        <img src="/svgs/music.svg" class="invert" alt="">
+        <div class="info" style="display:flex; justify-content:center; align-items:center;">
           <div>${song.replaceAll("%20", " ")}</div>
-          <div>retr0</div>
         </div>
         <div class="playnow">
           <img src="/svgs/play.svg" class="invert" alt="">
@@ -47,18 +46,18 @@ async function main() {
     Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e => {
         e.addEventListener("click", element => {
             playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim());
-            play.src = "pause.svg";
+            play.src = "/svgs/pause.svg";
         })
     })
 
     play.addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play();
-            play.src = "pause.svg";
+            play.src = "/svgs/pause.svg";
         }
         else {
             currentSong.pause();
-            play.src = "play-circle.svg";
+            play.src = "/svgs/play-circle.svg";
         }
     })
 
