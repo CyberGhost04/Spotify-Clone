@@ -12,7 +12,7 @@ async function getSongs() {
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split("/songs/Chase/")[1]); //change this for each folder
+            songs.push(element.href.split("/songs/Selena/")[1]); //change this for each folder
         }
     }
     return songs;
