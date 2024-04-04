@@ -20,10 +20,11 @@ async function getSongs() {
 
 const playMusic = (track) => {
     //let audio = new Audio("/songs/" + track);
+    play.src = "/svgs/pause.svg";
     currentSong.src = "/songs/Chain/" + track;
     currentSong.play();
     document.querySelector(".songinfo").innerHTML = `<div>${track.replaceAll("%20", " ")}</div>`;
-    document.querySelector(".songtime").innerHTML = "";
+    //document.querySelector(".songtime").innerHTML = "";
 
 }
 
