@@ -82,6 +82,9 @@ async function main() {
         if ((index + 1) > length) {
             playMusic(songs[index + 1]);
         }
+        else{
+            alert("end reached");
+        }
     })
 
     arrnext.addEventListener("click", () => {
