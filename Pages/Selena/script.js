@@ -3,7 +3,7 @@ let currentSong = new Audio();
 let songs;
 
 async function getSongs() {
-    let a = await fetch("http://127.0.0.1:5500/songs/Selena"); // change this for each folder
+    let a = await fetch("http://127.0.0.1:5501/songs/Selena"); // change this for each folder
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
