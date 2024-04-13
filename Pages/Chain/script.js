@@ -52,16 +52,24 @@ async function main() {
     })
 
     play.addEventListener("click", () => {
-        if (currentSong.paused) {
-            currentSong.play();
-            play.src = "/svgs/pause.svg";
-        }
-        else {
-            currentSong.pause();
-            play.src = "/svgs/play-circle.svg";
+        if (currentSong.src == "") {
+            playMusic(songs[0]);
+        } else {
+            if (currentSong.paused) {
+                currentSong.play();
+                play.src = "/svgs/pause.svg";
+            }
+            else {
+                currentSong.pause();
+                play.src = "/svgs/play-circle.svg";
+            }
         }
     })
 
+    currentSong.addEventListener("ended", () => {
+        play.src = "/svgs/play-circle.svg";
+    })
+    
     document.querySelector(".hamburger").addEventListener("click", () => {
         document.querySelector(".left").style.left = 0 + "%";
     })
@@ -72,30 +80,28 @@ async function main() {
 
     previous.addEventListener("click", () => {
         let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
-        if ((index - 1) >= 0) {
-            playMusic(songs[index - 1]);
-        }
+        index = ((index - 1) + songs.length) % songs.length; 
+        playMusic(songs[index]);
     })
-
+    
     next.addEventListener("click", () => {
         let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
-        if ((index + 1) > length) {
-            playMusic(songs[index + 1]);
-        }
+        index = (index + 1) % songs.length; 
+        playMusic(songs[index]);
     })
-
+    
     arrnext.addEventListener("click", () => {
         let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
-        if ((index + 1) > length) {
-            playMusic(songs[index + 1]);
-        }
+        index = (index + 1) % songs.length; 
+        playMusic(songs[index]);
     })
+    
     arrprev.addEventListener("click", () => {
         let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
-        if ((index - 1) >= 0) {
-            playMusic(songs[index - 1]);
-        }
+        index = ((index - 1) + songs.length) % songs.length; 
+        playMusic(songs[index]);
     })
+    
 
 }
 
