@@ -15,6 +15,8 @@ To use this application, you need to download your own songs and place them in t
 
 ## Screenshots
 
+![Screenshot 2024-04-15 120233](https://github.com/CyberGhost04/Spotify-Clone/assets/121675089/028a4567-6632-4e1b-b1b0-06795c061dad)
+![Screenshot 2024-04-15 120032](https://github.com/CyberGhost04/Spotify-Clone/assets/121675089/86fdf570-a275-4489-a4ac-f278fbaf99ec)
 
 ## Installation
 
